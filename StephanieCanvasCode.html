@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style >
+		
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="850px" height="850px"></canvas>
+
+	<script type="text/javascript">
+		var c=document.getElementById("canvas");
+		var ctx=c.getContext("2d");
+
+
+   //////Triangle
+		ctx.beginPath();
+		ctx.moveTo(160,400);
+		ctx.lineTo(300,300);
+		ctx.lineTo(400,400);
+
+
+  ////////Porte 2
+		ctx.beginPath();
+		ctx.moveTo(370, 485);
+		ctx.lineTo(340, 485);
+		ctx.lineTo(340, 415);
+		ctx.lineTo(370, 415);
+		ctx.lineWidth=2;
+		ctx.strokeStyle='#black';
+		ctx.fillStyle='#97BDD8';
+		ctx.fill();
+		ctx.closePath();
+		ctx.stroke();
+		
+////////trace in Door 1 
+		ctx.beginPath();
+		ctx.moveTo(290, 475); //  496 pr lngr b , 280 2plase b vers la droite 
+		ctx.lineTo(290, 415); ///415 pour lngr h , 280 + 2plase h vers la droite , - 2plase h vers la gauche 
+		//ctx.lineTo(300, 420);
+	    //ctx.lineTo(275, 420);
+		ctx.lineWidth=2;
+		ctx.strokeStyle='#000';
+		ctx.fillStyle='e3d647';
+		ctx.fill();
+		ctx.closePath();
+		ctx.stroke();
+		
+		
+		
+		 ////////////Trace 1 a.d
+		ctx.beginPath();
+		ctx.moveTo(416, 414);
+		ctx.lineTo(294, 300);
+		//ctx.lineTo(300,400);
+		//ctx.lineTo(160,400);
+		ctx.lineWidth=10;
+		ctx.strokeStyle='#4440A9';
+		ctx.fillStyle='000';
+		ctx.fill();
+		ctx.closePath();
+		ctx.stroke();
+		
+	
+
+
+	</script>
+
+</body>
+</html>
+
+		
